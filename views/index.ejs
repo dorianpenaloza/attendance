@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Attendance App</title>
+    </head>
+    <body>
+
+      <form method="POST" action="/names">
+        <input type="text" name="name">
+        <input type="submit" value="Submit">
+      </form>
+
+      <ul>
+        <% for(name in names) { %>
+        <li> <%= name %>, checked in <%= names[name];  %>x </li>
+        <% } %>
+      </ul>
+
+    </body>
+</html>
