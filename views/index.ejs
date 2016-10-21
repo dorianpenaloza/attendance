@@ -3,19 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <title>Attendance App</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     </head>
     <body>
+      <h1>Attendance App</h1>
 
-      <form method="POST" action="/names">
-        <input type="text" name="name">
-        <input type="submit" value="Submit">
+      <form class="ui huge form" method="POST" action="/names">
+        <div class="four fields">
+          <div class="field"> <input type="text" name="name" placeholder="Student"> </div>
+          <input class="ui primary basic button" type="submit" value="Check In">
+        </div>
       </form>
 
-      <ul>
         <% for(name in names) { %>
-        <li> <%= name %>, checked in <%= names[name];  %>x </li>
+        <h2> <%= name%>, checked in <%= names[name] %>x </h2>
         <% } %>
-      </ul>
 
     </body>
+
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 </html>
