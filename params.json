@@ -1,0 +1,6 @@
+{
+  "name": "Attendance Application",
+  "tagline": "",
+  "body": "#Attendance Application\r\n\r\nThe Attendance Application uses express.js along with Semantic UI to render user inputs.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
