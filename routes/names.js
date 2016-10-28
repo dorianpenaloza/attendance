@@ -3,7 +3,6 @@ const router = express.Router();
 
 
 const names = { }; //create an empty object
-var newDate = Date();
 
 router.get('/', function(req, res, next) {
   res.render('index.ejs', { names }); //renders the 'names' object into index.ejs
